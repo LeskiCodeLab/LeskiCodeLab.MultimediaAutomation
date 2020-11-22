@@ -10,24 +10,24 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>© 2020 Company</Copyright>
+    <Authors>Leski Code Lab</Authors>
+    <Company>Leski Code Lab</Company>
+    <Copyright>© 2020 Leski Code Lab</Copyright>
     <PackageTags>UiPath Activit𝗒</PackageTags>
     <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
     <!--<PackageIcon>packageIcon.png</PackageIcon>--> <!--PackageIcon not yet supported in UiPath Studio-->
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <FileVersion>3.7.0.0</FileVersion>
+    <AssemblyVersion>3.7.3.0</AssemblyVersion>
+    <FileVersion>3.7.3.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug' AND '$(DesignTimeBuild)' != 'true'">
-    <PackageVersion>3.7.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
+    <PackageVersion>3.7.3.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>3.7.0</PackageVersion>
+    <PackageVersion>3.7.3</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\AudioVideoCombineDesigner.xaml" />

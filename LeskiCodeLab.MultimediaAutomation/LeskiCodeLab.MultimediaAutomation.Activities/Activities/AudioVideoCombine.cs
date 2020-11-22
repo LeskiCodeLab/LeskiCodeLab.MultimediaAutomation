@@ -18,28 +18,35 @@ namespace LeskiCodeLab.MultimediaAutomation.Activities
 
         [Category("Input")]
         [RequiredArgument]
+        [DisplayName("FFMPEG Path")]
         public InArgument<string> ffmpegPath { get; set; }
 
         [Category("Input")]
         [RequiredArgument]
+        [DisplayName("Video File")]
         public InArgument<String> VideoFile { get; set; }
 
         [Category("Input")]
+        [DisplayName("Output Folder")]
         public InArgument<String> OutputFolder { get; set; }
 
         [DefaultValue("mov")]
         [Category("Input")]
+        [DisplayName("Output Container")]
         public InArgument<String> OutputContainer { get; set; } = "mov";
 
         [Category("Input")]
+        [DisplayName("Audio File")]
         public InArgument<String> AudioFile { get; set; }
 
         [DefaultValue("-vcodec prores_ks -profile:v 0")]
         [Category("Input")]
+        [DisplayName("Command")]
         public InArgument<String> Command { get; set; } = "-vcodec prores_ks -profile:v 3";
 
         [DefaultValue(false)]
         [Category("Input")]
+        [DisplayName("Debugging Mode")]
         public InArgument<bool> DebuggingMode { get; set; } = false;
 
         /// <summary>

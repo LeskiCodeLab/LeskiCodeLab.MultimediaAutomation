@@ -18,24 +18,32 @@ namespace LeskiCodeLab.MultimediaAutomation.Activities
 
         [Category("Input")]
         [RequiredArgument]
+        [DisplayName("FFMPEG Path")]
         public InArgument<string> ffmpegPath { get; set; }
+
+
         [Category("Input")]
         [RequiredArgument]
+        [DisplayName("Input File")]
         public InArgument<String> InputFile { get; set; }
 
         [Category("Input")]
         [RequiredArgument]
+        [DisplayName("Output Folder")]
         public InArgument<String> OutputFolder { get; set; }
 
         [Category("Input")]
+        [DisplayName("Output Container")]
         public InArgument<String> OutputContainer { get; set; }
 
         [Category("Input")]
         [RequiredArgument]
+        [DisplayName("Command")]
         public InArgument<String> Command { get; set; }
 
         [DefaultValue(false)]
         [Category("Input")]
+        [DisplayName("Debugging Mode")]
         public InArgument<bool> DebuggingMode { get; set; } = false;
 
         /// <summary>
